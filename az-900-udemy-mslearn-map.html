@@ -38,6 +38,27 @@
         header h1 { margin: 0; font-size: 2rem; }
         header p { margin: 10px 0 0; opacity: 0.9; }
 
+        /* リセットボタンのスタイル */
+        .controls {
+            text-align: right;
+            margin-bottom: 20px;
+        }
+        .reset-button {
+            background-color: #ffffff;
+            color: #d13438;
+            border: 1px solid #d13438;
+            padding: 8px 16px;
+            font-size: 0.9rem;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.2s;
+        }
+        .reset-button:hover {
+            background-color: #fdf5f5;
+            box-shadow: 0 2px 4px rgba(209, 52, 56, 0.2);
+        }
+
         .guide-box {
             background: white;
             border-left: 6px solid var(--azure-blue);
@@ -90,7 +111,7 @@
         
         ul { list-style: none; padding: 0; margin: 0; }
         
-        /* リストアイテムを横並び（フレックスボックス）に変更してチェックボックスとテキストを並べる */
+        /* リストアイテムを横並びにしてチェックボックスとテキストを並べる */
         li {
             padding: 8px 12px;
             border-bottom: 1px solid #f0f0f0;
@@ -111,16 +132,15 @@
         }
         .knowledge-check::before { content: "📝 "; }
 
-        /* ▼▼ 追加：チェックボックスと完了時のスタイル ▼▼ */
+        /* チェックボックスと完了時のスタイル */
         .progress-checkbox {
             width: 18px;
             height: 18px;
             cursor: pointer;
-            accent-color: var(--azure-blue); /* チェック色をAzureブルーに */
+            accent-color: var(--azure-blue);
             flex-shrink: 0;
-            margin-top: 4px; /* テキストと高さを揃える */
+            margin-top: 4px;
         }
-        /* チェック済みの項目はグレーアウト＆取り消し線 */
         .completed a {
             color: #9aa0a6;
             text-decoration: line-through;
@@ -128,7 +148,6 @@
         .completed .knowledge-check {
             color: #e08b8d; 
         }
-        /* ▲▲ 追加ここまで ▲▲ */
 
         @media (max-width: 600px) {
             body { padding: 10px; }
@@ -144,6 +163,10 @@
         <p>Udemy　セクション > レクチャー</p>
         <p>× Microsoft Learn　ラーニングパス > モジュール > ユニット</p>
     </header>
+
+    <div class="controls">
+        <button id="reset-btn" class="reset-button">🔄 すべての進捗をリセット</button>
+    </div>
 
     <div class="guide-box">
         <h2>📚 学習の進め方と記号の定義</h2>
@@ -563,15 +586,16 @@
         // 全てのリストアイテムを取得
         const listItems = document.querySelectorAll('.content-body li');
 
+        // 各リストアイテムにチェックボックスを生成・配置
         listItems.forEach((li) => {
             const link = li.querySelector('a');
             if (link) {
-                // チェックボックスを生成
+                // チェックボックスの要素を作成
                 const checkbox = document.createElement('input');
                 checkbox.type = 'checkbox';
                 checkbox.className = 'progress-checkbox';
                 
-                // リンクのURLを保存用のユニークなキー（識別子）として使用
+                // リンクのURLを保存用のユニークなキーとして使用
                 const uniqueKey = 'az900-progress-' + link.getAttribute('href');
                 
                 // ローカルストレージから前回の状態を復元
@@ -581,12 +605,9 @@
                     li.classList.add('completed');
                 }
 
-                // チェックボックスがクリックされた時の動作
+                // チェックボックスがクリックされた時の動作（保存と見た目変更）
                 checkbox.addEventListener('change', (e) => {
-                    // 状態をローカルストレージに保存
                     localStorage.setItem(uniqueKey, e.target.checked);
-                    
-                    // チェックされたら見た目をグレーアウトする
                     if (e.target.checked) {
                         li.classList.add('completed');
                     } else {
@@ -594,11 +615,37 @@
                     }
                 });
 
-                // <li>要素の先頭（リンクの左側）にチェックボックスを挿入
+                // li要素の先頭にチェックボックスを挿入
                 li.insertBefore(checkbox, li.firstChild);
             }
         });
+
+        // リセットボタンの動作設定
+        const resetBtn = document.getElementById('reset-btn');
+        if (resetBtn) {
+            resetBtn.addEventListener('click', () => {
+                // 誤操作防止の確認ダイアログ
+                if (confirm('学習の進捗をすべてリセットしますか？\n（この操作は取り消せません）')) {
+                    const checkboxes = document.querySelectorAll('.progress-checkbox');
+                    
+                    checkboxes.forEach((cb) => {
+                        // 1. チェックを外す
+                        cb.checked = false;
+                        
+                        // 2. 見た目を元に戻す
+                        const li = cb.closest('li');
+                        li.classList.remove('completed');
+                        
+                        // 3. ローカルストレージの保存データを削除する
+                        const link = li.querySelector('a');
+                        const uniqueKey = 'az900-progress-' + link.getAttribute('href');
+                        localStorage.removeItem(uniqueKey);
+                    });
+                }
+            });
+        }
     });
 </script>
+
 </body>
 </html>
