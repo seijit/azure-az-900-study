@@ -85,7 +85,8 @@
         .label-udemy { background-color: var(--udemy-purple); }
         .label-mslearn { background-color: var(--ms-learn-green); }
 
-        .list-title { font-weight: bold; margin-bottom: 10px; display: block; }
+        .list-title { font-weight: bold; margin-bottom: 10px; margin-top: 15px; display: block; color: var(--text-sub); }
+        .list-title:first-of-type { margin-top: 0; }
         
         ul { list-style: none; padding: 0; margin: 0; }
         li {
@@ -96,7 +97,7 @@
         li:hover { background-color: #fcfcfc; }
         li:last-child { border-bottom: none; }
         
-        a { text-decoration: none; color: #005a9e; font-size: 0.95rem; }
+        a { text-decoration: none; color: #005a9e; font-size: 0.95rem; display: block; }
         a:hover { text-decoration: underline; color: #0078d4; }
         
         .knowledge-check {
@@ -144,7 +145,7 @@
         <div class="content-body">
             <div class="platform-box">
                 <span class="platform-label label-udemy">Udemy</span>
-                <span class="list-title">セクション 1: 概要</span>
+                <span class="list-title">セクション 1</span>
                 <ul>
                     <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/33380042" target="_blank">1.1 コースのご紹介</a></li>
                     <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/33728886" target="_blank">1.2 AZ-900試験の概要</a></li>
@@ -159,49 +160,50 @@
         <div class="content-body">
             <div class="platform-box">
                 <span class="platform-label label-udemy">Udemy</span>
-                <span class="list-title">セクション 2: クラウドのメリットとモデル</span>
+                <span class="list-title">セクション 2</span>
                 <ul>
-                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/33380050" target="_blank">2.4 クラウドの基礎で変わったこと</a></li>
-                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/33380058" target="_blank">2.5 メリット（可用性、DRなど）</a></li>
-                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/33380062" target="_blank">2.6 メリット（スケーラビリティ、弾力性、機敏性）</a></li>
-                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/33380064" target="_blank">2.7 メリット（強力性、弾力性）</a></li>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/33380050" target="_blank">2.4 クラウドの登場で変わったこと</a></li>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/33380052" target="_blank">2.5 クラウドコンピューティングの定義</a></li>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/33380058" target="_blank">2.6 クラウドのメリット（高可用性、フォールトトレランス、ディザスタリカバリ）</a></li>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/33380062" target="_blank">2.7 クラウドのメリット（スケーラビリティ、弾力性、機敏性）</a></li>
                     <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/33380082" target="_blank">2.8 CapExとOpEx</a></li>
                     <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/33380088" target="_blank">2.9 サービスモデルの違い</a></li>
-                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/33380092" target="_blank">2.10 責任共有モデル</a></li>
-                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/33380094" target="_blank">2.11 運用モデルの違い（小テスト）</a></li>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/33380092" target="_blank">2.10 共同責任モデル</a></li>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/33380094" target="_blank">2.11 展開モデルの違い</a></li>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/quiz/5669046" target="_blank" class="knowledge-check">小テスト1: 演習テスト</a></li>
                 </ul>
             </div>
             <div class="platform-box">
-                <span class="platform-label label-mslearn">MS Learn</span>
-                <span class="list-title">LP1.M1: クラウド コンピューティング</span>
+                <span class="platform-label label-mslearn">Microsoft Learn</span>
+                <span class="list-title">モジュール 1: クラウド コンピューティングについて説明する</span>
                 <ul>
-                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-cloud-compute/1-introduction-microsoft-azure-fundamentals/" target="_blank">LP1.M1.U1 概要</a></li>
-                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-cloud-compute/2-introduction-cloud-compute/" target="_blank">LP1.M1.U2 クラウド概要</a></li>
-                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-cloud-compute/3-what-cloud-compute/" target="_blank">LP1.M1.U3 クラウドとは</a></li>
-                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-cloud-compute/4-describe-shared-responsibility-model/" target="_blank">LP1.M1.U4 共有責任モデル</a></li>
-                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-cloud-compute/5-define-cloud-models/" target="_blank">LP1.M1.U5 クラウドモデル</a></li>
-                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-cloud-compute/6-describe-consumption-based-model/" target="_blank">LP1.M1.U6 従量課金モデル</a></li>
+                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-cloud-compute/1-introduction-microsoft-azure-fundamentals/" target="_blank">LP1.M1.U1 Microsoft Azure Fundamentals の概要</a></li>
+                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-cloud-compute/2-introduction-cloud-compute/" target="_blank">LP1.M1.U2 クラウド コンピューティングの概要</a></li>
+                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-cloud-compute/3-what-cloud-compute/" target="_blank">LP1.M1.U3 クラウド コンピューティングとは</a></li>
+                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-cloud-compute/4-describe-shared-responsibility-model/" target="_blank">LP1.M1.U4 共有責任モデルについて説明する</a></li>
+                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-cloud-compute/5-define-cloud-models/" target="_blank">LP1.M1.U5 クラウド モデルを定義する</a></li>
+                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-cloud-compute/6-describe-consumption-based-model/" target="_blank">LP1.M1.U6 従量課金モデルについて説明する</a></li>
                     <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-cloud-compute/7-knowledge-check/" target="_blank" class="knowledge-check">LP1.M1.U7 モジュール評価</a></li>
-                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-cloud-compute/8-summary/" target="_blank" class="summary-unit">LP1.M1.U8 概要まとめ</a></li>
+                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-cloud-compute/8-summary/" target="_blank">LP1.M1.U8 概要</a></li>
                 </ul>
-                <span class="list-title">LP1.M2: クラウドサービスの利点</span>
+                <span class="list-title">モジュール 2: クラウド サービスを使用する利点について説明する</span>
                 <ul>
                     <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-benefits-use-cloud-services/1-introduction/" target="_blank">LP1.M2.U1 はじめに</a></li>
-                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-benefits-use-cloud-services/2-high-availability-scalability-cloud/" target="_blank">LP1.M2.U2 高可用性とスケーラビリティ</a></li>
-                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-benefits-use-cloud-services/3-reliability-predictability-cloud/" target="_blank">LP1.M2.U3 信頼性と予測可能性</a></li>
-                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-benefits-use-cloud-services/4-security-governance-cloud/" target="_blank">LP1.M2.U4 セキュリティとガバナンス</a></li>
-                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-benefits-use-cloud-services/5-manageability-cloud/" target="_blank">LP1.M2.U5 管理の容易さ</a></li>
+                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-benefits-use-cloud-services/2-high-availability-scalability-cloud/" target="_blank">LP1.M2.U2 クラウドでの高可用性とスケーラビリティの利点について説明する</a></li>
+                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-benefits-use-cloud-services/3-reliability-predictability-cloud/" target="_blank">LP1.M2.U3 クラウドでの信頼性と予測可能性の利点について説明する</a></li>
+                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-benefits-use-cloud-services/4-security-governance-cloud/" target="_blank">LP1.M2.U4 クラウドでのセキュリティとガバナンスの利点について説明する</a></li>
+                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-benefits-use-cloud-services/5-manageability-cloud/" target="_blank">LP1.M2.U5 クラウドでの管理の容易さの利点について説明する</a></li>
                     <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-benefits-use-cloud-services/6-knowledge-check/" target="_blank" class="knowledge-check">LP1.M2.U6 モジュール評価</a></li>
-                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-benefits-use-cloud-services/7-summary/" target="_blank" class="summary-unit">LP1.M2.U7 概要まとめ</a></li>
+                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-benefits-use-cloud-services/7-summary/" target="_blank">LP1.M2.U7 概要</a></li>
                 </ul>
-                <span class="list-title">LP1.M3: クラウドサービスの種類</span>
+                <span class="list-title">モジュール 3: クラウド サービスの種類について説明する</span>
                 <ul>
                     <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-cloud-service-types/1-introduction/" target="_blank">LP1.M3.U1 導入</a></li>
-                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-cloud-service-types/2-describe-infrastructure-service/" target="_blank">LP1.M3.U2 IaaS</a></li>
-                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-cloud-service-types/3-describe-platform-service/" target="_blank">LP1.M3.U3 PaaS</a></li>
-                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-cloud-service-types/4-describe-software-service/" target="_blank">LP1.M3.U4 SaaS</a></li>
+                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-cloud-service-types/2-describe-infrastructure-service/" target="_blank">LP1.M3.U2 サービスとしてのインフラストラクチャについて説明する</a></li>
+                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-cloud-service-types/3-describe-platform-service/" target="_blank">LP1.M3.U3 サービスとしてのプラットフォームについて説明する</a></li>
+                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-cloud-service-types/4-describe-software-service/" target="_blank">LP1.M3.U4 サービスとしてのソフトウェアについて説明する</a></li>
                     <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-cloud-service-types/5-knowledge-check/" target="_blank" class="knowledge-check">LP1.M3.U5 モジュール評価</a></li>
-                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-cloud-service-types/6-summary/" target="_blank" class="summary-unit">LP1.M3.U6 概要まとめ</a></li>
+                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-cloud-service-types/6-summary/" target="_blank">LP1.M3.U6 概要</a></li>
                 </ul>
             </div>
         </div>
@@ -212,35 +214,36 @@
         <div class="content-body">
             <div class="platform-box">
                 <span class="platform-label label-udemy">Udemy</span>
-                <span class="list-title">セクション 3: インフラと管理構造</span>
+                <span class="list-title">セクション 3</span>
                 <ul>
                     <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/33456410" target="_blank">3.12 このセクションで学ぶこと</a></li>
-                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/33380706" target="_blank">3.13 リージョン、リージョンペア</a></li>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/33380706" target="_blank">3.13 ジオ、リージョン、リージョンペア</a></li>
                     <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/33380714" target="_blank">3.14 可用性ゾーン</a></li>
                     <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/33380718" target="_blank">3.15 可用性セット</a></li>
-                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/33380744" target="_blank">3.16 特殊リージョン（ソブリンリージョン）</a></li>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/33380744" target="_blank">3.16 特殊なリージョン（ソブリンリージョン）</a></li>
                     <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/33444084" target="_blank">3.17 データセンターに関する用語のまとめ</a></li>
                     <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/33380758" target="_blank">3.18 Azureリソース</a></li>
                     <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/33380760" target="_blank">3.19 リソースグループ</a></li>
                     <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/33380764" target="_blank">3.20 サブスクリプション</a></li>
                     <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/33380766" target="_blank">3.21 管理グループ</a></li>
-                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/33444086" target="_blank">3.22 管理階層構造（管理グループ〜リソース）</a></li>
-                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34103894" target="_blank">3.23 無料アカウント（小テスト）</a></li>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/33444086" target="_blank">3.22 リソースグループ、サブスクリプション、管理グループの階層構造</a></li>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34103894" target="_blank">3.23 無料アカウント</a></li>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/quiz/5670382" target="_blank" class="knowledge-check">小テスト2: 演習テスト</a></li>
                 </ul>
             </div>
             <div class="platform-box">
-                <span class="platform-label label-mslearn">MS Learn</span>
-                <span class="list-title">LP2.M1: アーキテクチャ コンポーネント</span>
+                <span class="platform-label label-mslearn">Microsoft Learn</span>
+                <span class="list-title">モジュール: Azure のコア アーキテクチャ コンポーネントについて説明する</span>
                 <ul>
                     <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-core-architectural-components-of-azure/1-introduction/" target="_blank">LP2.M1.U1 紹介</a></li>
-                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-core-architectural-components-of-azure/2-what-microsoft-azure/" target="_blank">LP2.M1.U2 Microsoft Azureとは</a></li>
-                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-core-architectural-components-of-azure/3-get-started-azure-accounts/" target="_blank">LP2.M1.U3 Azureアカウントを使ってみる</a></li>
-                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-core-architectural-components-of-azure/4-exercise-explore-learn-sandbox/" target="_blank" class="exercise-unit">LP2.M1.U4 演習 - Azureとの対話を探索する</a></li>
-                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-core-architectural-components-of-azure/5-describe-azure-physical-infrastructure/" target="_blank">LP2.M1.U5 物理インフラストラクチャ</a></li>
-                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-core-architectural-components-of-azure/6-describe-azure-management-infrastructure/" target="_blank">LP2.M1.U6 管理インフラストラクチャ</a></li>
-                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-core-architectural-components-of-azure/7-exercise-create-azure-resource/" target="_blank" class="exercise-unit">LP2.M1.U7 演習 - Azureリソースを作成する</a></li>
+                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-core-architectural-components-of-azure/2-what-microsoft-azure/" target="_blank">LP2.M1.U2 Microsoft Azure とは</a></li>
+                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-core-architectural-components-of-azure/3-get-started-azure-accounts/" target="_blank">LP2.M1.U3 Azure アカウントを使ってみる</a></li>
+                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-core-architectural-components-of-azure/4-exercise-explore-learn-sandbox/" target="_blank">LP2.M1.U4 演習 - Azure との対話を探索する</a></li>
+                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-core-architectural-components-of-azure/5-describe-azure-physical-infrastructure/" target="_blank">LP2.M1.U5 Azure 物理インフラストラクチャについて説明する</a></li>
+                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-core-architectural-components-of-azure/6-describe-azure-management-infrastructure/" target="_blank">LP2.M1.U6 Azure の管理インフラストラクチャについて説明する</a></li>
+                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-core-architectural-components-of-azure/7-exercise-create-azure-resource/" target="_blank">LP2.M1.U7 演習 - Azure リソースを作成する</a></li>
                     <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-core-architectural-components-of-azure/8-knowledge-check/" target="_blank" class="knowledge-check">LP2.M1.U8 モジュール評価</a></li>
-                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-core-architectural-components-of-azure/9-summary/" target="_blank" class="summary-unit">LP2.M1.U9 概要まとめ</a></li>
+                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-core-architectural-components-of-azure/9-summary/" target="_blank">LP2.M1.U9 概要</a></li>
                 </ul>
             </div>
         </div>
@@ -251,51 +254,53 @@
         <div class="content-body">
             <div class="platform-box">
                 <span class="platform-label label-udemy">Udemy</span>
-                <span class="list-title">セクション 4: コンピューティングサービス</span>
+                <span class="list-title">セクション 4</span>
                 <ul>
-                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34103896" target="_blank">4.24 セクション導入</a></li>
-                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34103902" target="_blank">4.25 Virtual Machines</a></li>
-                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34103904" target="_blank">4.26 VMを構成する要素</a></li>
-                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34103906" target="_blank">4.27 VMのサイズ</a></li>
-                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34103908" target="_blank">4.28 VMのディスク</a></li>
-                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34103910" target="_blank">4.29 NICとパブリックIP</a></li>
-                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34103912" target="_blank">4.30 NSG</a></li>
-                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34103914" target="_blank">4.31 VM Scale Sets</a></li>
-                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34103916" target="_blank">4.32 App Service</a></li>
-                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34103918" target="_blank">4.33 Azure Functions</a></li>
-                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34103922" target="_blank">4.34 ACI</a></li>
-                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34103926" target="_blank">4.35 AKS</a></li>
-                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34103928" target="_blank">4.36 Azure Virtual Desktop</a></li>
-                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34103930" target="_blank">4.37 まとめ（小テスト）</a></li>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34103896" target="_blank">4.24 コンピューティングサービス</a></li>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34103902" target="_blank">4.25 Virtual Machines（仮想マシン）</a></li>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34103904" target="_blank">4.26 仮想マシンを構成する要素</a></li>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34103906" target="_blank">4.27 仮想マシンのOSとサイズ</a></li>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34103908" target="_blank">4.28 仮想マシンのディスク</a></li>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34103910" target="_blank">4.29 ネットワークインターフェイスとパブリックIPアドレス</a></li>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34103912" target="_blank">4.30 ネットワークセキュリティグループ（NSG）</a></li>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34103914" target="_blank">4.31 Virtual Machine Scale Sets（仮想マシンスケールセット）</a></li>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34103916" target="_blank">4.32 Azure App Service（Webアプリ）</a></li>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34103918" target="_blank">4.33 Azure Functions（関数アプリ）</a></li>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34103922" target="_blank">4.34 Azure Container Instances（ACI）</a></li>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34103926" target="_blank">4.35 Azure Kubernetes Service（AKS）</a></li>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34103928" target="_blank">4.36 Azure Virtual Desktop（AVD）</a></li>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34103930" target="_blank">4.37 コンピューティングサービスのまとめ</a></li>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/quiz/5670392" target="_blank" class="knowledge-check">小テスト3: 演習テスト</a></li>
                 </ul>
-                <span class="list-title">セクション 5: ネットワーキング</span>
+                <span class="list-title">セクション 5</span>
                 <ul>
                     <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34103934" target="_blank">5.38 仮想ネットワークとサブネット</a></li>
                     <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34103938" target="_blank">5.39 仮想ネットワークピアリング</a></li>
                     <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34103940" target="_blank">5.40 VPNゲートウェイ</a></li>
                     <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34103944" target="_blank">5.41 ExpressRoute</a></li>
                     <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34103946" target="_blank">5.42 Azure DNS</a></li>
-                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34103948" target="_blank">5.43 エンドポイントの種類（小テスト）</a></li>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34103948" target="_blank">5.43 エンドポイントの種類</a></li>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/quiz/5670394" target="_blank" class="knowledge-check">小テスト4: 演習テスト</a></li>
                 </ul>
             </div>
             <div class="platform-box">
-                <span class="platform-label label-mslearn">MS Learn</span>
-                <span class="list-title">LP2.M2: コンピューティングおよびネットワーク</span>
+                <span class="platform-label label-mslearn">Microsoft Learn</span>
+                <span class="list-title">モジュール: Azure コンピューティングおよびネットワーク サービスについて説明する</span>
                 <ul>
                     <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-azure-compute-networking-services/1-introduction/" target="_blank">LP2.M2.U1 導入</a></li>
-                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-azure-compute-networking-services/2-virtual-machines/" target="_blank">LP2.M2.U2 VMについて</a></li>
-                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-azure-compute-networking-services/3-exercise-create-azure-virtual-machine/" target="_blank" class="exercise-unit">LP2.M2.U3 演習 - VMを作成する</a></li>
-                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-azure-compute-networking-services/4-virtual-desktop/" target="_blank">LP2.M2.U4 仮想デスクトップ</a></li>
-                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-azure-compute-networking-services/5-containers/" target="_blank">LP2.M2.U5 コンテナー</a></li>
-                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-azure-compute-networking-services/6-functions/" target="_blank">LP2.M2.U6 Azure Functions</a></li>
-                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-azure-compute-networking-services/7-describe-application-hosting-options/" target="_blank">LP2.M2.U7 ホスティングオプション</a></li>
-                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-azure-compute-networking-services/8-virtual-network/" target="_blank">LP2.M2.U8 仮想ネットワーク</a></li>
-                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-azure-compute-networking-services/9-exercise-configure-network-access/" target="_blank" class="exercise-unit">LP2.M2.U9 演習 - ネットワークアクセス構成</a></li>
-                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-azure-compute-networking-services/10-virtual-private-networks/" target="_blank">LP2.M2.U10 VPNについて</a></li>
-                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-azure-compute-networking-services/11-expressroute/" target="_blank">LP2.M2.U11 ExpressRoute</a></li>
-                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-azure-compute-networking-services/12-domain-name-system/" target="_blank">LP2.M2.U12 Azure DNS</a></li>
+                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-azure-compute-networking-services/2-virtual-machines/" target="_blank">LP2.M2.U2 Azure Virtual Machines について説明する</a></li>
+                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-azure-compute-networking-services/3-exercise-create-azure-virtual-machine/" target="_blank">LP2.M2.U3 演習 - Azure 仮想マシンを作成する</a></li>
+                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-azure-compute-networking-services/4-virtual-desktop/" target="_blank">LP2.M2.U4 Azure 仮想デスクトップについて説明する</a></li>
+                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-azure-compute-networking-services/5-containers/" target="_blank">LP2.M2.U5 Azure コンテナーについて説明する</a></li>
+                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-azure-compute-networking-services/6-functions/" target="_blank">LP2.M2.U6 Azure Functions について説明する</a></li>
+                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-azure-compute-networking-services/7-describe-application-hosting-options/" target="_blank">LP2.M2.U7 アプリケーション ホスティングのオプションについて説明する</a></li>
+                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-azure-compute-networking-services/8-virtual-network/" target="_blank">LP2.M2.U8 Azure 仮想ネットワークについて説明する</a></li>
+                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-azure-compute-networking-services/9-exercise-configure-network-access/" target="_blank">LP2.M2.U9 演習 - Azure 仮想マシンを作成し、ネットワーク アクセスを構成する</a></li>
+                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-azure-compute-networking-services/10-virtual-private-networks/" target="_blank">LP2.M2.U10 Azure 仮想プライベート ネットワークについて説明する</a></li>
+                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-azure-compute-networking-services/11-expressroute/" target="_blank">LP2.M2.U11 Azure ExpressRoute について説明する</a></li>
+                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-azure-compute-networking-services/12-domain-name-system/" target="_blank">LP2.M2.U12 Azure DNS について説明する</a></li>
                     <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-azure-compute-networking-services/13-knowledge-check/" target="_blank" class="knowledge-check">LP2.M2.U13 モジュール評価</a></li>
-                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-azure-compute-networking-services/14-summary/" target="_blank" class="summary-unit">LP2.M2.U14 概要まとめ</a></li>
+                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-azure-compute-networking-services/14-summary/" target="_blank">LP2.M2.U14 概要</a></li>
                 </ul>
             </div>
         </div>
@@ -306,33 +311,34 @@
         <div class="content-body">
             <div class="platform-box">
                 <span class="platform-label label-udemy">Udemy</span>
-                <span class="list-title">セクション 6: ストレージサービス</span>
+                <span class="list-title">セクション 6</span>
                 <ul>
                     <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34103954" target="_blank">6.44 Azure Storage</a></li>
                     <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34103958" target="_blank">6.45 ストレージアカウント</a></li>
-                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34103962" target="_blank">6.46 データサービス</a></li>
-                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34103966" target="_blank">6.47 Blobアクセス層</a></li>
-                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34103972" target="_blank">6.48 冗長性オプション</a></li>
-                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34103976" target="_blank">6.49 Storage Explorer</a></li>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34103962" target="_blank">6.46 ストレージのデータサービス</a></li>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34103966" target="_blank">6.47 BLOBストレージのアクセス層</a></li>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34103972" target="_blank">6.48 ストレージの冗長オプション</a></li>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34103976" target="_blank">6.49 Azure Storage Explorer</a></li>
                     <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34103978" target="_blank">6.50 AzCopy</a></li>
                     <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34103980" target="_blank">6.51 Azure File Sync</a></li>
                     <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34103984" target="_blank">6.52 Azure Migrate</a></li>
-                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34103986" target="_blank">6.53 Azure Data Box（小テスト）</a></li>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34103986" target="_blank">6.53 Azure Data Box</a></li>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/quiz/5670396" target="_blank" class="knowledge-check">小テスト5: 演習テスト</a></li>
                 </ul>
             </div>
             <div class="platform-box">
-                <span class="platform-label label-mslearn">MS Learn</span>
-                <span class="list-title">LP2.M3: ストレージ サービス</span>
+                <span class="platform-label label-mslearn">Microsoft Learn</span>
+                <span class="list-title">モジュール: Azure ストレージ サービスについて説明する</span>
                 <ul>
                     <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-azure-storage-services/1-introduction/" target="_blank">LP2.M3.U1 導入</a></li>
-                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-azure-storage-services/2-accounts/" target="_blank">LP2.M3.U2 ストレージアカウント</a></li>
-                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-azure-storage-services/3-redundancy/" target="_blank">LP2.M3.U3 冗長性</a></li>
-                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-azure-storage-services/4-describe-azure-storage-services/" target="_blank">LP2.M3.U4 サービス詳細</a></li>
-                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-azure-storage-services/5-exercise-create-storage-blob/" target="_blank" class="exercise-unit">LP2.M3.U5 演習 - Blobを作成する</a></li>
-                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-azure-storage-services/6-identify-azure-data-migration-options/" target="_blank">LP2.M3.U6 データ移行オプション</a></li>
-                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-azure-storage-services/7-identify-azure-file-movement-options/" target="_blank">LP2.M3.U7 ファイル移動オプション</a></li>
+                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-azure-storage-services/2-accounts/" target="_blank">LP2.M3.U2 Azure ストレージ アカウントについて説明する</a></li>
+                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-azure-storage-services/3-redundancy/" target="_blank">LP2.M3.U3 Azure のストレージの冗長性について説明する</a></li>
+                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-azure-storage-services/4-describe-azure-storage-services/" target="_blank">LP2.M3.U4 Azure ストレージ サービスについて説明する</a></li>
+                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-azure-storage-services/5-exercise-create-storage-blob/" target="_blank">LP2.M3.U5 演習 - ストレージ BLOB を作成する</a></li>
+                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-azure-storage-services/6-identify-azure-data-migration-options/" target="_blank">LP2.M3.U6 Azure のデータ移行オプションを特定する</a></li>
+                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-azure-storage-services/7-identify-azure-file-movement-options/" target="_blank">LP2.M3.U7 Azure のファイル移動オプションを特定する</a></li>
                     <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-azure-storage-services/8-knowledge-check/" target="_blank" class="knowledge-check">LP2.M3.U8 モジュール評価</a></li>
-                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-azure-storage-services/9-summary/" target="_blank" class="summary-unit">LP2.M3.U9 概要まとめ</a></li>
+                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-azure-storage-services/9-summary/" target="_blank">LP2.M3.U9 概要</a></li>
                 </ul>
             </div>
         </div>
@@ -343,39 +349,41 @@
         <div class="content-body">
             <div class="platform-box">
                 <span class="platform-label label-udemy">Udemy</span>
-                <span class="list-title">セクション 7: セキュリティとID</span>
+                <span class="list-title">セクション 7</span>
                 <ul>
-                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34103990" target="_blank">7.54 セクション導入</a></li>
-                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34103992" target="_blank">7.55 Microsoft Entra ID</a></li>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34103990" target="_blank">7.54 このセクションで学ぶこと</a></li>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34103992" target="_blank">7.55 Microsoft Entra ID（旧Azure AD）</a></li>
                     <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34103996" target="_blank">7.56 認証と承認</a></li>
-                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34104000" target="_blank">7.57 サブスクリプションとの関係</a></li>
-                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34104004" target="_blank">7.58 オンプレADとの違い</a></li>
-                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34104006" target="_blank">7.59 Entra Connect</a></li>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34104000" target="_blank">7.57 Microsoft Entra IDとサブスクリプションの関係</a></li>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34104004" target="_blank">7.58 オンプレミスのActive Directoryとの違い</a></li>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34104006" target="_blank">7.59 Microsoft Entra Connect</a></li>
                     <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34104008" target="_blank">7.60 ユーザーとグループ</a></li>
-                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34104010" target="_blank">7.61 SSOについて</a></li>
-                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34104014" target="_blank">7.62 MFA</a></li>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34104010" target="_blank">7.61 シングルサインオン（SSO）</a></li>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34104014" target="_blank">7.62 多要素認証（MFA）</a></li>
                     <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34104016" target="_blank">7.63 パスワードレス</a></li>
-                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34104018" target="_blank">7.64 RBAC</a></li>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34104018" target="_blank">7.64 ロールベースのアクセス制御（RBAC）</a></li>
                     <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34104020" target="_blank">7.65 ゼロトラスト</a></li>
                     <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34104024" target="_blank">7.66 条件付きアクセス</a></li>
-                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34104026" target="_blank">7.67 Defender for Cloud（小テスト）</a></li>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34104025" target="_blank">7.67 多層防御</a></li>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34104026" target="_blank">7.68 Microsoft Defender for Cloud</a></li>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/quiz/5670402" target="_blank" class="knowledge-check">小テスト6: 演習テスト</a></li>
                 </ul>
             </div>
             <div class="platform-box">
-                <span class="platform-label label-mslearn">MS Learn</span>
-                <span class="list-title">LP2.M4: ID、アクセス、セキュリティ</span>
+                <span class="platform-label label-mslearn">Microsoft Learn</span>
+                <span class="list-title">モジュール: Azure の ID、アクセス、セキュリティについて説明する</span>
                 <ul>
                     <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-azure-identity-access-security/1-introduction/" target="_blank">LP2.M4.U1 紹介</a></li>
-                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-azure-identity-access-security/2-directory-services/" target="_blank">LP2.M4.U2 ディレクトリサービス</a></li>
-                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-azure-identity-access-security/3-authentication-methods/" target="_blank">LP2.M4.U3 認証方法</a></li>
-                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-azure-identity-access-security/4-external-identities/" target="_blank">LP2.M4.U4 外部ID</a></li>
-                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-azure-identity-access-security/5-conditional-access/" target="_blank">LP2.M4.U5 条件付きアクセス</a></li>
-                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-azure-identity-access-security/6-role-based-access-control/" target="_blank">LP2.M4.U6 RBAC</a></li>
-                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-azure-identity-access-security/7-describe-zero-trust-model/" target="_blank">LP2.M4.U7 ゼロトラストモデル</a></li>
-                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-azure-identity-access-security/8-describe-defense-depth/" target="_blank">LP2.M4.U8 多層防御</a></li>
-                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-azure-identity-access-security/9-describe-microsoft-defender-for-cloud/" target="_blank">LP2.M4.U9 Defender for Cloud</a></li>
+                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-azure-identity-access-security/2-directory-services/" target="_blank">LP2.M4.U2 Azure ディレクトリ サービスについて説明する</a></li>
+                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-azure-identity-access-security/3-authentication-methods/" target="_blank">LP2.M4.U3 Azure の認証方法について説明する</a></li>
+                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-azure-identity-access-security/4-external-identities/" target="_blank">LP2.M4.U4 Azure の外部 ID について説明する</a></li>
+                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-azure-identity-access-security/5-conditional-access/" target="_blank">LP2.M4.U5 Azure の条件付きアクセスについて説明する</a></li>
+                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-azure-identity-access-security/6-role-based-access-control/" target="_blank">LP2.M4.U6 Azure のロールベースのアクセス制御について説明する</a></li>
+                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-azure-identity-access-security/7-describe-zero-trust-model/" target="_blank">LP2.M4.U7 ゼロ トラスト モデルについて説明する</a></li>
+                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-azure-identity-access-security/8-describe-defense-depth/" target="_blank">LP2.M4.U8 多層防御について説明する</a></li>
+                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-azure-identity-access-security/9-describe-microsoft-defender-for-cloud/" target="_blank">LP2.M4.U9 Microsoft Defender for Cloud について説明する</a></li>
                     <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-azure-identity-access-security/10-knowledge-check/" target="_blank" class="knowledge-check">LP2.M4.U10 モジュール評価</a></li>
-                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-azure-identity-access-security/11-summary/" target="_blank" class="summary-unit">LP2.M4.U11 概要まとめ</a></li>
+                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-azure-identity-access-security/11-summary/" target="_blank">LP2.M4.U11 概要</a></li>
                 </ul>
             </div>
         </div>
@@ -386,31 +394,31 @@
         <div class="content-body">
             <div class="platform-box">
                 <span class="platform-label label-udemy">Udemy</span>
-                <span class="list-title">セクション 8: コストの最適化</span>
+                <span class="list-title">セクション 8</span>
                 <ul>
-                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34104028" target="_blank">8.68 セクション導入</a></li>
-                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34104030" target="_blank">8.69 コスト影響要因</a></li>
-                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34104032" target="_blank">8.70 コスト把握機能</a></li>
-                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34104034" target="_blank">8.71 節約オプション</a></li>
-                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34104036" target="_blank">8.72 予約インスタンス</a></li>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34104028" target="_blank">8.69 このセクションで学ぶこと</a></li>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34104030" target="_blank">8.70 コストに影響を与える要因1</a></li>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34104032" target="_blank">8.71 コストに影響を与える要因2</a></li>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34104034" target="_blank">8.72 コストの割引オプション</a></li>
                     <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34104038" target="_blank">8.73 料金計算ツール</a></li>
-                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34104040" target="_blank">8.74 TCO計算ツール</a></li>
-                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34104042" target="_blank">Cost Management</a></li>
-                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34104044" target="_blank">8.76 タグ（小テスト）</a></li>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34104040" target="_blank">8.74 総保有コスト（TCO）計算ツール</a></li>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34104042" target="_blank">8.75 Microsoft Cost Management</a></li>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34104044" target="_blank">8.76 タグ</a></li>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/quiz/5670416" target="_blank" class="knowledge-check">小テスト7: 演習テスト</a></li>
                 </ul>
             </div>
             <div class="platform-box">
-                <span class="platform-label label-mslearn">MS Learn</span>
-                <span class="list-title">LP3.M1: コスト管理</span>
+                <span class="platform-label label-mslearn">Microsoft Learn</span>
+                <span class="list-title">モジュール: Azure でのコスト管理について説明する</span>
                 <ul>
                     <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-cost-management-azure/1-introduction/" target="_blank">LP3.M1.U1 はじめに</a></li>
-                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-cost-management-azure/2-describe-factors-affect-costs-azure/" target="_blank">LP3.M1.U2 影響要因</a></li>
-                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-cost-management-azure/3-compare-pricing-total-cost-of-ownership-calculators/" target="_blank">LP3.M1.U3 計算ツールの比較</a></li>
-                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-cost-management-azure/4-exercise-estimate-workload-costs-use-pricing-calculator/" target="_blank" class="exercise-unit">LP3.M1.U4 演習 - 料金計算ツール活用</a></li>
-                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-cost-management-azure/6-describe-azure-tool/" target="_blank">LP3.M1.U6 コスト管理ツール</a></li>
-                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-cost-management-azure/7-describe-purpose-of-tags/" target="_blank">LP3.M1.U7 タグの目的</a></li>
+                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-cost-management-azure/2-describe-factors-affect-costs-azure/" target="_blank">LP3.M1.U2 Azure のコストに影響する可能性がある要因について説明する</a></li>
+                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-cost-management-azure/3-compare-pricing-total-cost-of-ownership-calculators/" target="_blank">LP3.M1.U3 料金計算ツールを調べる</a></li>
+                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-cost-management-azure/4-exercise-estimate-workload-costs-use-pricing-calculator/" target="_blank">LP3.M1.U4 演習 - 料金計算ツールを使用してワークロードのコストを見積もる</a></li>
+                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-cost-management-azure/6-describe-azure-tool/" target="_blank">LP3.M1.U6 Microsoft Cost Management ツールについて説明する</a></li>
+                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-cost-management-azure/7-describe-purpose-of-tags/" target="_blank">LP3.M1.U7 タグの目的について説明する</a></li>
                     <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-cost-management-azure/8-knowledge-check/" target="_blank" class="knowledge-check">LP3.M1.U8 モジュール評価</a></li>
-                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-cost-management-azure/9-summary/" target="_blank" class="summary-unit">LP3.M1.U9 概要まとめ</a></li>
+                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-cost-management-azure/9-summary/" target="_blank">LP3.M1.U9 概要</a></li>
                 </ul>
             </div>
         </div>
@@ -421,27 +429,28 @@
         <div class="content-body">
             <div class="platform-box">
                 <span class="platform-label label-udemy">Udemy</span>
-                <span class="list-title">セクション 9: ガバナンス</span>
+                <span class="list-title">セクション 9</span>
                 <ul>
-                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34104048" target="_blank">9.77 セクション導入</a></li>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34104048" target="_blank">9.77 このセクションで学ぶこと</a></li>
                     <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/44936245" target="_blank">9.78 Microsoft Purview</a></li>
                     <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34104050" target="_blank">9.79 Azure Policy</a></li>
                     <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34104056" target="_blank">9.80 リソースロック</a></li>
-                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34104058" target="_blank">9.81 Service Trust Portal（小テスト）</a></li>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34104058" target="_blank">9.81 Service Trust Portal</a></li>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/quiz/5670426" target="_blank" class="knowledge-check">小テスト8: 演習テスト</a></li>
                 </ul>
             </div>
             <div class="platform-box">
-                <span class="platform-label label-mslearn">MS Learn</span>
-                <span class="list-title">LP3.M2: ガバナンスとコンプライアンス</span>
+                <span class="platform-label label-mslearn">Microsoft Learn</span>
+                <span class="list-title">モジュール: Azure のガバナンスとコンプライアンス機能およびツールについて説明する</span>
                 <ul>
                     <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-features-tools-azure-for-governance-compliance/1-introduction/" target="_blank">LP3.M2.U1 紹介</a></li>
-                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-features-tools-azure-for-governance-compliance/2-describe-purpose-microsoft-purview/" target="_blank">LP3.M2.U2 Microsoft Purview</a></li>
-                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-features-tools-azure-for-governance-compliance/3-describe-purpose-azure-policy/" target="_blank">LP3.M2.U3 Azure Policy</a></li>
-                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-features-tools-azure-for-governance-compliance/4-describe-purpose-resource-locks/" target="_blank">LP3.M2.U4 リソースロック</a></li>
-                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-features-tools-azure-for-governance-compliance/5-exercise-configure-resource-lock/" target="_blank" class="exercise-unit">LP3.M2.U5 演習 - リソースロック構成</a></li>
-                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-features-tools-azure-for-governance-compliance/6-describe-purpose-service-trust-portal/" target="_blank">LP3.M2.U6 Service Trust Portal</a></li>
+                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-features-tools-azure-for-governance-compliance/2-describe-purpose-microsoft-purview/" target="_blank">LP3.M2.U2 Microsoft Purview の目的について説明する</a></li>
+                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-features-tools-azure-for-governance-compliance/3-describe-purpose-azure-policy/" target="_blank">LP3.M2.U3 Azure Policy の目的について説明する</a></li>
+                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-features-tools-azure-for-governance-compliance/4-describe-purpose-resource-locks/" target="_blank">LP3.M2.U4 リソース ロックの目的について説明する</a></li>
+                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-features-tools-azure-for-governance-compliance/5-exercise-configure-resource-lock/" target="_blank">LP3.M2.U5 演習 - リソース ロックを構成する</a></li>
+                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-features-tools-azure-for-governance-compliance/6-describe-purpose-service-trust-portal/" target="_blank">LP3.M2.U6 Service Trust Portal の目的について説明する</a></li>
                     <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-features-tools-azure-for-governance-compliance/7-knowledge-check/" target="_blank" class="knowledge-check">LP3.M2.U7 モジュール評価</a></li>
-                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-features-tools-azure-for-governance-compliance/8-summary/" target="_blank" class="summary-unit">LP3.M2.U8 概要まとめ</a></li>
+                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-features-tools-azure-for-governance-compliance/8-summary/" target="_blank">LP3.M2.U8 概要</a></li>
                 </ul>
             </div>
         </div>
@@ -452,26 +461,27 @@
         <div class="content-body">
             <div class="platform-box">
                 <span class="platform-label label-udemy">Udemy</span>
-                <span class="list-title">セクション 10: デプロイとツール</span>
+                <span class="list-title">セクション 10</span>
                 <ul>
-                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34104064" target="_blank">10.82 セクション導入</a></li>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34104064" target="_blank">10.82 このセクションで学ぶこと</a></li>
                     <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34104066" target="_blank">10.83 Azureポータル</a></li>
-                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34104072" target="_blank">10.84 CLI / PowerShell</a></li>
-                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34104074" target="_blank">10.85 Cloud Shell</a></li>
-                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34104080" target="_blank">10.86 ARMテンプレート</a></li>
-                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34104082" target="_blank">10.87 Azure Arc（小テスト）</a></li>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34104072" target="_blank">10.84 Azure CLI / Azure PowerShell</a></li>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34104074" target="_blank">10.85 Azure Cloud Shell</a></li>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34104080" target="_blank">10.86 Azure Resource Manager（ARM）</a></li>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34104082" target="_blank">10.87 Azure Arc</a></li>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/quiz/5670438" target="_blank" class="knowledge-check">小テスト9: 演習テスト</a></li>
                 </ul>
             </div>
             <div class="platform-box">
-                <span class="platform-label label-mslearn">MS Learn</span>
-                <span class="list-title">LP3.M3: デプロイツール</span>
+                <span class="platform-label label-mslearn">Microsoft Learn</span>
+                <span class="list-title">モジュール: Azure リソースを管理およびデプロイするための機能とツールについて説明する</span>
                 <ul>
                     <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-features-tools-manage-deploy-azure-resources/1-introduction/" target="_blank">LP3.M3.U1 紹介</a></li>
-                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-features-tools-manage-deploy-azure-resources/2-describe-interacting-azure/" target="_blank">LP3.M3.U2 対話ツール</a></li>
-                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-features-tools-manage-deploy-azure-resources/3-describe-purpose-of-azure-arc/" target="_blank">LP3.M3.U3 Azure Arc</a></li>
-                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-features-tools-manage-deploy-azure-resources/4-describe-azure-resource-manager-azure-arm-templates/" target="_blank">LP3.M3.U4 ARMテンプレート</a></li>
+                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-features-tools-manage-deploy-azure-resources/2-describe-interacting-azure/" target="_blank">LP3.M3.U2 Azure と対話するためのツールについて説明する</a></li>
+                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-features-tools-manage-deploy-azure-resources/3-describe-purpose-of-azure-arc/" target="_blank">LP3.M3.U3 Azure Arc の目的について説明する</a></li>
+                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-features-tools-manage-deploy-azure-resources/4-describe-azure-resource-manager-azure-arm-templates/" target="_blank">LP3.M3.U4 Azure Resource Manager と Azure ARM テンプレートについて説明する</a></li>
                     <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-features-tools-manage-deploy-azure-resources/5-knowledge-check/" target="_blank" class="knowledge-check">LP3.M3.U5 モジュール評価</a></li>
-                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-features-tools-manage-deploy-azure-resources/6-summary/" target="_blank" class="summary-unit">LP3.M3.U6 概要まとめ</a></li>
+                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-features-tools-manage-deploy-azure-resources/6-summary/" target="_blank">LP3.M3.U6 概要</a></li>
                 </ul>
             </div>
         </div>
@@ -482,27 +492,28 @@
         <div class="content-body">
             <div class="platform-box">
                 <span class="platform-label label-udemy">Udemy</span>
-                <span class="list-title">セクション 11: 監視と正常性</span>
+                <span class="list-title">セクション 11</span>
                 <ul>
-                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34104086" target="_blank">11.88 セクション導入</a></li>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34104086" target="_blank">11.88 このセクションで学ぶこと</a></li>
                     <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34104108" target="_blank">11.89 Azure Advisor</a></li>
-                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34104112" target="_blank">11.90 Service Health</a></li>
-                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34104116" target="_blank">11.91 監視概要</a></li>
-                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34104120" target="_blank">11.92 サービス正常性詳細</a></li>
-                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34104126" target="_blank">11.93 Resource Health</a></li>
-                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34104130" target="_blank">11.94 Azure Monitor（小テスト）</a></li>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34104112" target="_blank">11.90 Azure Service Health</a></li>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34104116" target="_blank">11.91 Azureの状態</a></li>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34104120" target="_blank">11.92 Service Health（サービス正常性）</a></li>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34104126" target="_blank">11.93 Resource Health（リソース正常性）</a></li>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34104130" target="_blank">11.94 Azure Monitor</a></li>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/quiz/5670442" target="_blank" class="knowledge-check">小テスト10: 演習テスト</a></li>
                 </ul>
             </div>
             <div class="platform-box">
-                <span class="platform-label label-mslearn">MS Learn</span>
-                <span class="list-title">LP3.M4: 監視ツール</span>
+                <span class="platform-label label-mslearn">Microsoft Learn</span>
+                <span class="list-title">モジュール: Azure の監視ツールについて説明する</span>
                 <ul>
-                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-monitoring-tools-azure/1-introduction/" target="_blank">LP3.M4.U1 イントロ</a></li>
-                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-monitoring-tools-azure/2-describe-purpose-of-azure-advisor/" target="_blank">LP3.M4.U2 Azure Advisor</a></li>
-                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-monitoring-tools-azure/3-describe-azure-service-health/" target="_blank">LP3.M4.U3 Azure Service Health</a></li>
-                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-monitoring-tools-azure/4-describe-azure-monitor/" target="_blank">LP3.M4.U4 Azure Monitor</a></li>
+                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-monitoring-tools-azure/1-introduction/" target="_blank">LP3.M4.U1 イントロダクション</a></li>
+                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-monitoring-tools-azure/2-describe-purpose-of-azure-advisor/" target="_blank">LP3.M4.U2 Azure Advisor の目的について説明する</a></li>
+                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-monitoring-tools-azure/3-describe-azure-service-health/" target="_blank">LP3.M4.U3 Azure Service Health について説明する</a></li>
+                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-monitoring-tools-azure/4-describe-azure-monitor/" target="_blank">LP3.M4.U4 Azure Monitor について説明する</a></li>
                     <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-monitoring-tools-azure/5-knowledge-check/" target="_blank" class="knowledge-check">LP3.M4.U5 モジュール評価</a></li>
-                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-monitoring-tools-azure/6-summary/" target="_blank" class="summary-unit">LP3.M4.U6 概要まとめ</a></li>
+                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-monitoring-tools-azure/6-summary/" target="_blank">LP3.M4.U6 概要</a></li>
                 </ul>
             </div>
         </div>
@@ -513,8 +524,9 @@
         <div class="content-body">
             <div class="platform-box">
                 <span class="platform-label label-udemy">Udemy</span>
+                <span class="list-title">セクション 12</span>
                 <ul>
-                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34104138" target="_blank">12.95 ご挨拶（ボーナスレクチャー）</a></li>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34104138" target="_blank">12.95 おわりに（ボーナスレクチャー）</a></li>
                 </ul>
             </div>
         </div>
