@@ -89,15 +89,20 @@
         .list-title:first-of-type { margin-top: 0; }
         
         ul { list-style: none; padding: 0; margin: 0; }
+        
+        /* リストアイテムを横並び（フレックスボックス）に変更してチェックボックスとテキストを並べる */
         li {
             padding: 8px 12px;
             border-bottom: 1px solid #f0f0f0;
             transition: background 0.2s;
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
         }
         li:hover { background-color: #fcfcfc; }
         li:last-child { border-bottom: none; }
         
-        a { text-decoration: none; color: #005a9e; font-size: 0.95rem; display: block; }
+        a { text-decoration: none; color: #005a9e; font-size: 0.95rem; display: block; width: 100%; }
         a:hover { text-decoration: underline; color: #0078d4; }
         
         .knowledge-check {
@@ -105,6 +110,25 @@
             font-weight: bold;
         }
         .knowledge-check::before { content: "📝 "; }
+
+        /* ▼▼ 追加：チェックボックスと完了時のスタイル ▼▼ */
+        .progress-checkbox {
+            width: 18px;
+            height: 18px;
+            cursor: pointer;
+            accent-color: var(--azure-blue); /* チェック色をAzureブルーに */
+            flex-shrink: 0;
+            margin-top: 4px; /* テキストと高さを揃える */
+        }
+        /* チェック済みの項目はグレーアウト＆取り消し線 */
+        .completed a {
+            color: #9aa0a6;
+            text-decoration: line-through;
+        }
+        .completed .knowledge-check {
+            color: #e08b8d; 
+        }
+        /* ▲▲ 追加ここまで ▲▲ */
 
         @media (max-width: 600px) {
             body { padding: 10px; }
@@ -534,5 +558,47 @@
 
 </div>
 
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        // 全てのリストアイテムを取得
+        const listItems = document.querySelectorAll('.content-body li');
+
+        listItems.forEach((li) => {
+            const link = li.querySelector('a');
+            if (link) {
+                // チェックボックスを生成
+                const checkbox = document.createElement('input');
+                checkbox.type = 'checkbox';
+                checkbox.className = 'progress-checkbox';
+                
+                // リンクのURLを保存用のユニークなキー（識別子）として使用
+                const uniqueKey = 'az900-progress-' + link.getAttribute('href');
+                
+                // ローカルストレージから前回の状態を復元
+                const isChecked = localStorage.getItem(uniqueKey) === 'true';
+                checkbox.checked = isChecked;
+                if (isChecked) {
+                    li.classList.add('completed');
+                }
+
+                // チェックボックスがクリックされた時の動作
+                checkbox.addEventListener('change', (e) => {
+                    // 状態をローカルストレージに保存
+                    localStorage.setItem(uniqueKey, e.target.checked);
+                    
+                    // チェックされたら見た目をグレーアウトする
+                    if (e.target.checked) {
+                        li.classList.add('completed');
+                    } else {
+                        li.classList.remove('completed');
+                    }
+                });
+
+                // <li>要素の先頭（リンクの左側）にチェックボックスを挿入
+                li.insertBefore(checkbox, li.firstChild);
+            }
+        });
+    });
+</script>
 </body>
 </html>
