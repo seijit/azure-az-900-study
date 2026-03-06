@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azure AZ-900 Udemy x Microsoft Learn 学習ロードマップ</title>
+    <style>
+        :root {
+            --azure-blue: #0078d4;
+            --udemy-purple: #a435f0;
+            --ms-learn-green: #107c10;
+            --bg-color: #f4f7f9;
+            --card-bg: #ffffff;
+            --text-main: #202124;
+            --text-sub: #5f6368;
+        }
+        body {
+            font-family: 'Segoe UI', "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.7;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #0078d4, #00bcf2);
+            color: white;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        header h1 { margin: 0; font-size: 2rem; }
+        header p { margin: 10px 0 0; opacity: 0.9; }
+
+        .guide-box {
+            background: white;
+            border-left: 6px solid var(--azure-blue);
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        .guide-box h2 { font-size: 1.2rem; margin-top: 0; color: var(--azure-blue); }
+        .guide-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            font-size: 0.9rem;
+        }
+
+        .step-card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            overflow: hidden;
+            border: 1px solid #e0e0e0;
+        }
+        .step-header {
+            background: #f8f9fa;
+            padding: 15px 25px;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            align-items: center;
+        }
+        .step-header h2 { margin: 0; font-size: 1.3rem; color: #333; }
+        
+        .content-body { padding: 25px; }
+        
+        .platform-box { margin-bottom: 25px; }
+        .platform-box:last-child { margin-bottom: 0; }
+        .platform-label {
+            display: inline-block;
+            padding: 2px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            color: white;
+            margin-bottom: 10px;
+        }
+        .label-udemy { background-color: var(--udemy-purple); }
+        .label-mslearn { background-color: var(--ms-learn-green); }
+
+        .list-title { font-weight: bold; margin-bottom: 10px; display: block; }
+        
+        ul { list-style: none; padding: 0; margin: 0; }
+        li {
+            padding: 8px 12px;
+            border-bottom: 1px solid #f0f0f0;
+            transition: background 0.2s;
+        }
+        li:hover { background-color: #fcfcfc; }
+        li:last-child { border-bottom: none; }
+        
+        a { text-decoration: none; color: #005a9e; font-size: 0.95rem; }
+        a:hover { text-decoration: underline; color: #0078d4; }
+        
+        .knowledge-check {
+            color: #d13438;
+            font-weight: bold;
+        }
+        .knowledge-check::before { content: "📝 "; }
+
+        @media (max-width: 600px) {
+            body { padding: 10px; }
+            header h1 { font-size: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Azure AZ-900 Udemy x Microsoft Learn 学習ロードマップ</h1>
+        <p>Udemy　セクション > レクチャー</p>
+        <p>× Microsoft Learn　ラーニングパス > モジュール > ユニット</p>
+    </header>
+
+    <div class="guide-box">
+        <h2>📚 学習の進め方と記号の定義</h2>
+        <div class="guide-grid">
+            <div>
+                <strong>📺 Udemy (動画学習)</strong><br>
+                概念を視覚的に理解。<br>
+                <strong>セクション</strong> 大項目<br>
+                <strong>レクチャー</strong> 小項目<br>
+            </div>
+            <div>
+                <strong>📖 Microsoft Learn (テキスト・演習)</strong><br>
+                詳細知識の補完と演習。<br>
+                <strong>LP:</strong> ラーニングパス (大項目)<br>
+                <strong>M:</strong> モジュール (中項目)<br>
+                <strong>U:</strong> ユニット (最小単位)
+            </div>
+        </div>
+    </div>
+
+    <section class="step-card">
+        <div class="step-header"><h2>🏁 STEP 0: 導入と準備</h2></div>
+        <div class="content-body">
+            <div class="platform-box">
+                <span class="platform-label label-udemy">Udemy</span>
+                <span class="list-title">セクション 1: 概要</span>
+                <ul>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/33380042" target="_blank">1.1 コースのご紹介</a></li>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/33728886" target="_blank">1.2 AZ-900試験の概要</a></li>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/41442054" target="_blank">1.3 Udemyのレビューについて</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="step-card">
+        <div class="step-header"><h2>☁️ STEP 1: クラウドの概念</h2></div>
+        <div class="content-body">
+            <div class="platform-box">
+                <span class="platform-label label-udemy">Udemy</span>
+                <span class="list-title">セクション 2: クラウドのメリットとモデル</span>
+                <ul>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/33380050" target="_blank">2.4 クラウドの基礎で変わったこと</a></li>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/33380058" target="_blank">2.5 メリット（可用性、DRなど）</a></li>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/33380062" target="_blank">2.6 メリット（スケーラビリティ、弾力性など）</a></li>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/33380082" target="_blank">2.8 CapExとOpEx</a></li>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/33380088" target="_blank">2.9 サービスモデルの違い</a></li>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/33380092" target="_blank">2.10 責任共有モデル</a></li>
+                </ul>
+            </div>
+            <div class="platform-box">
+                <span class="platform-label label-mslearn">MS Learn</span>
+                <span class="list-title">LP1: クラウドの概念について説明する</span>
+                <ul>
+                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-cloud-compute/4-describe-shared-responsibility-model/" target="_blank">LP1.M1.U4 共有責任モデル</a></li>
+                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-cloud-compute/7-knowledge-check/" target="_blank" class="knowledge-check">LP1.M1.U7 モジュール評価</a></li>
+                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-benefits-use-cloud-services/2-high-availability-scalability-cloud/" target="_blank">LP1.M2.U2 高可用性とスケーラビリティ</a></li>
+                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-benefits-use-cloud-services/6-knowledge-check/" target="_blank" class="knowledge-check">LP1.M2.U6 モジュール評価</a></li>
+                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-cloud-service-types/2-describe-infrastructure-service/" target="_blank">LP1.M3.U2 IaaS</a></li>
+                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-cloud-service-types/3-describe-platform-service/" target="_blank">LP1.M3.U3 PaaS</a></li>
+                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-cloud-service-types/5-knowledge-check/" target="_blank" class="knowledge-check">LP1.M3.U5 モジュール評価</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="step-card">
+        <div class="step-header"><h2>🏛️ STEP 2: コアアーキテクチャ</h2></div>
+        <div class="content-body">
+            <div class="platform-box">
+                <span class="platform-label label-udemy">Udemy</span>
+                <span class="list-title">セクション 3: 物理インフラと管理構造</span>
+                <ul>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/33380706" target="_blank">3.13 リージョン、リージョンペア</a></li>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/33380714" target="_blank">3.14 可用性ゾーン</a></li>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/33380760" target="_blank">3.19 リソースグループ</a></li>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/33444086" target="_blank">3.22 管理階層構造（管理グループ〜リソース）</a></li>
+                </ul>
+            </div>
+            <div class="platform-box">
+                <span class="platform-label label-mslearn">MS Learn</span>
+                <span class="list-title">LP2.M1: Azure アーキテクチャ コンポーネント</span>
+                <ul>
+                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-core-architectural-components-of-azure/5-describe-azure-physical-infrastructure/" target="_blank">LP2.M1.U5 物理インフラストラクチャ</a></li>
+                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-core-architectural-components-of-azure/6-describe-azure-management-infrastructure/" target="_blank">LP2.M1.U6 管理インフラストラクチャ</a></li>
+                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-core-architectural-components-of-azure/8-knowledge-check/" target="_blank" class="knowledge-check">LP2.M1.U8 モジュール評価</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="step-card">
+        <div class="step-header"><h2>💻 STEP 3: コンピューティングとネットワーキング</h2></div>
+        <div class="content-body">
+            <div class="platform-box">
+                <span class="platform-label label-udemy">Udemy</span>
+                <span class="list-title">セクション 4 & 5: 各種サービスとVNet</span>
+                <ul>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34103902" target="_blank">4.25 Virtual Machines</a></li>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34103916" target="_blank">4.32 App Service</a></li>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34103918" target="_blank">4.33 Azure Functions</a></li>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34103934" target="_blank">5.38 仮想ネットワークとサブネット</a></li>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34103940" target="_blank">5.40 VPNゲートウェイ / ExpressRoute</a></li>
+                </ul>
+            </div>
+            <div class="platform-box">
+                <span class="platform-label label-mslearn">MS Learn</span>
+                <span class="list-title">LP2.M2: コンピューティングおよびネットワーク</span>
+                <ul>
+                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-azure-compute-networking-services/2-virtual-machines/" target="_blank">LP2.M2.U2 VMについて</a></li>
+                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-azure-compute-networking-services/5-containers/" target="_blank">LP2.M2.U5 コンテナー (ACI/AKS)</a></li>
+                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-azure-compute-networking-services/8-virtual-network/" target="_blank">LP2.M2.U8 仮想ネットワーク</a></li>
+                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-azure-compute-networking-services/13-knowledge-check/" target="_blank" class="knowledge-check">LP2.M2.U13 モジュール評価</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="step-card">
+        <div class="step-header"><h2>💾 STEP 4: ストレージ</h2></div>
+        <div class="content-body">
+            <div class="platform-box">
+                <span class="platform-label label-udemy">Udemy</span>
+                <span class="list-title">セクション 6: ストレージサービス</span>
+                <ul>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34103958" target="_blank">6.45 ストレージアカウント</a></li>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34103966" target="_blank">6.47 Blobアクセスティア</a></li>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34103972" target="_blank">6.48 冗長性オプション</a></li>
+                </ul>
+            </div>
+            <div class="platform-box">
+                <span class="platform-label label-mslearn">MS Learn</span>
+                <span class="list-title">LP2.M3: ストレージ サービスについて説明する</span>
+                <ul>
+                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-azure-storage-services/3-redundancy/" target="_blank">LP2.M3.U3 ストレージの冗長性</a></li>
+                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-azure-storage-services/6-identify-azure-data-migration-options/" target="_blank">LP2.M3.U6 データ移行 (Data Box等)</a></li>
+                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-azure-storage-services/8-knowledge-check/" target="_blank" class="knowledge-check">LP2.M3.U8 モジュール評価</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="step-card">
+        <div class="step-header"><h2>🔐 STEP 5: ID、アクセス、およびセキュリティ</h2></div>
+        <div class="content-body">
+            <div class="platform-box">
+                <span class="platform-label label-udemy">Udemy</span>
+                <span class="list-title">セクション 7: セキュリティとガバナンス</span>
+                <ul>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34103992" target="_blank">7.55 Microsoft Entra ID (Azure AD)</a></li>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34104018" target="_blank">7.64 RBAC (ロールベースアクセス制御)</a></li>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34104024" target="_blank">7.66 条件付きアクセス</a></li>
+                </ul>
+            </div>
+            <div class="platform-box">
+                <span class="platform-label label-mslearn">MS Learn</span>
+                <span class="list-title">LP2.M4: ID、アクセス、セキュリティ</span>
+                <ul>
+                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-azure-identity-access-security/5-conditional-access/" target="_blank">LP2.M4.U5 条件付きアクセス</a></li>
+                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-azure-identity-access-security/7-describe-zero-trust-model/" target="_blank">LP2.M4.U7 ゼロトラストモデル</a></li>
+                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-azure-identity-access-security/10-knowledge-check/" target="_blank" class="knowledge-check">LP2.M4.U10 モジュール評価</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="step-card">
+        <div class="step-header"><h2>💰 STEP 6: コスト管理</h2></div>
+        <div class="content-body">
+            <div class="platform-box">
+                <span class="platform-label label-udemy">Udemy</span>
+                <span class="list-title">セクション 8: コストの最適化</span>
+                <ul>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34104038" target="_blank">8.73 料金計算ツール</a></li>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34104040" target="_blank">8.74 TCO計算ツール</a></li>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34104042" target="_blank">8.75 Cost Management</a></li>
+                </ul>
+            </div>
+            <div class="platform-box">
+                <span class="platform-label label-mslearn">MS Learn</span>
+                <span class="list-title">LP3.M1: コスト管理について説明する</span>
+                <ul>
+                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-cost-management-azure/2-describe-factors-affect-costs-azure/" target="_blank">LP3.M1.U2 コストに影響する要因</a></li>
+                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-cost-management-azure/7-describe-purpose-of-tags/" target="_blank">LP3.M1.U7 タグの目的</a></li>
+                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-cost-management-azure/8-knowledge-check/" target="_blank" class="knowledge-check">LP3.M1.U8 モジュール評価</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="step-card">
+        <div class="step-header"><h2>🏛️ STEP 7: ガバナンスとコンプライアンス</h2></div>
+        <div class="content-body">
+            <div class="platform-box">
+                <span class="platform-label label-udemy">Udemy</span>
+                <span class="list-title">セクション 9: ガバナンスツール</span>
+                <ul>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/44936245" target="_blank">9.78 Microsoft Purview</a></li>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34104050" target="_blank">9.79 Azure Policy</a></li>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34104056" target="_blank">9.80 リソースロック</a></li>
+                </ul>
+            </div>
+            <div class="platform-box">
+                <span class="platform-label label-mslearn">MS Learn</span>
+                <span class="list-title">LP3.M2: ガバナンスとコンプライアンス</span>
+                <ul>
+                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-features-tools-azure-for-governance-compliance/3-describe-purpose-azure-policy/" target="_blank">LP3.M2.U3 Azure Policy</a></li>
+                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-features-tools-azure-for-governance-compliance/6-describe-purpose-service-trust-portal/" target="_blank">LP3.M2.U6 Service Trust Portal</a></li>
+                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-features-tools-azure-for-governance-compliance/7-knowledge-check/" target="_blank" class="knowledge-check">LP3.M2.U7 モジュール評価</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="step-card">
+        <div class="step-header"><h2>🛠️ STEP 8: 管理ツールとデプロイ</h2></div>
+        <div class="content-body">
+            <div class="platform-box">
+                <span class="platform-label label-udemy">Udemy</span>
+                <span class="list-title">セクション 10: デプロイツール</span>
+                <ul>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34104072" target="_blank">10.84 Azure CLI / PowerShell</a></li>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34104074" target="_blank">10.85 Azure Cloud Shell</a></li>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34104080" target="_blank">10.86 ARM テンプレート</a></li>
+                </ul>
+            </div>
+            <div class="platform-box">
+                <span class="platform-label label-mslearn">MS Learn</span>
+                <span class="list-title">LP3.M3: 管理およびデプロイ ツール</span>
+                <ul>
+                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-features-tools-manage-deploy-azure-resources/3-describe-purpose-of-azure-arc/" target="_blank">LP3.M3.U3 Azure Arc</a></li>
+                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-features-tools-manage-deploy-azure-resources/4-describe-azure-resource-manager-azure-arm-templates/" target="_blank">LP3.M3.U4 ARM テンプレート</a></li>
+                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-features-tools-manage-deploy-azure-resources/5-knowledge-check/" target="_blank" class="knowledge-check">LP3.M3.U5 モジュール評価</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="step-card">
+        <div class="step-header"><h2>🔍 STEP 9: 監視ツール</h2></div>
+        <div class="content-body">
+            <div class="platform-box">
+                <span class="platform-label label-udemy">Udemy</span>
+                <span class="list-title">セクション 11: 監視と正常性</span>
+                <ul>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34104108" target="_blank">11.89 Azure Advisor</a></li>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34104112" target="_blank">11.90 Azure Service Health</a></li>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34104130" target="_blank">11.94 Azure Monitor</a></li>
+                </ul>
+            </div>
+            <div class="platform-box">
+                <span class="platform-label label-mslearn">MS Learn</span>
+                <span class="list-title">LP3.M4: 監視ツールについて説明する</span>
+                <ul>
+                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-monitoring-tools-azure/2-describe-purpose-of-azure-advisor/" target="_blank">LP3.M4.U2 Azure Advisor</a></li>
+                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-monitoring-tools-azure/4-describe-azure-monitor/" target="_blank">LP3.M4.U4 Azure Monitor</a></li>
+                    <li><a href="https://learn.microsoft.com/ja-jp/training/modules/describe-monitoring-tools-azure/5-knowledge-check/" target="_blank" class="knowledge-check">LP3.M4.U5 モジュール評価</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="step-card">
+        <div class="step-header"><h2>🏁 STEP 10: 完了</h2></div>
+        <div class="content-body">
+            <div class="platform-box">
+                <span class="platform-label label-udemy">Udemy</span>
+                <ul>
+                    <li><a href="https://www.udemy.com/course/microsoft-azure-az900-video/learn/lecture/34104138" target="_blank">12.95 ご挨拶（ボーナスレクチャー）</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+</body>
+</html>
